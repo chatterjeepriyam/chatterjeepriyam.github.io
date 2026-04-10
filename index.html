@@ -468,7 +468,7 @@
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 80px;
+      gap: 48px;
       align-items: start;
     }
     .about-text p {
@@ -1333,12 +1333,12 @@
         <span class="tag">Python</span>
         <span class="tag">R</span>
       </div>
-      <!-- Photo gallery 2×2 -->
-      <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-top:28px;">
-        <img src="images/photo1.png" alt="Research photo" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;border:1px solid var(--border);">
-        <img src="images/photo2.png" alt="Research photo" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;border:1px solid var(--border);">
-        <img src="images/photo3.png" alt="Research photo" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;border:1px solid var(--border);">
-        <img src="images/photo4.jpg" alt="Research photo" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;border:1px solid var(--border);">
+      <!-- 2×2 photo grid — lab/conference photos -->
+      <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:8px; margin-top:24px;">
+        <img src="images/photo2.png" alt="Research" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;border:1px solid var(--border);">
+        <img src="images/photo3.png" alt="Research" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;border:1px solid var(--border);">
+        <img src="images/photo4.jpg" alt="Research" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;border:1px solid var(--border);">
+        <img src="images/photo1.png" alt="Research" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;border:1px solid var(--border);">
       </div>
     </div>
     <div class="about-cards">
@@ -1362,8 +1362,9 @@
         <div class="info-card-value">4.75 / 5.0 (SECaT)</div>
         <div class="info-card-sub">Top 10% — Engagement & Instructional Clarity</div>
       </div>
-      <div style="margin-top:16px; border-radius:12px; overflow:hidden; border:1px solid var(--border);">
-        <img src="images/portrait.jpg" alt="Priyam Chatterjee" style="width:100%;display:block;border-radius:12px;">
+      <!-- photo1 directly under SECaT card — conference/presentation photo -->
+      <div style="border-radius:10px; overflow:hidden; border:1px solid var(--border); margin-top:4px;">
+        <img src="images/photo1.png" alt="Priyam presenting" style="width:100%;display:block;object-fit:cover;max-height:220px;">
       </div>
     </div>
   </div>
