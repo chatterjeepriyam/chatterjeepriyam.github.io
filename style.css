@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.7;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    opacity: 0.8;
+}
+
+nav {
+    text-align: center;
+    padding: 15px;
+    background: #020617;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #94a3b8;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+h2 {
+    color: #38bdf8;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #020617;
+    margin-top: 40px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
