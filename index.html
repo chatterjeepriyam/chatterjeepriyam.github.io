@@ -1,72 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priyam Chatterjee</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priyam Chatterjee — Neurophysiologist & Para Sport Researcher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>Priyam Chatterjee</h1>
-    <p>PhD Candidate — Human Movement Neuroscience</p>
-    <p style="max-width:600px; margin:auto; margin-top:15px;">
-Developing objective methods to improve fairness and integrity in Para-sport classification.
-</p>
-</header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="projects.html">Projects</a>
-    <a href="cv.html">CV</a>
-    <a href="contact.html">Contact</a>
+<!-- ░░ NAVIGATION ░░ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">PC</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
-<section class="fade-in">
-    <h2>Research Focus</h2>
-    <p>
-<p>
-    I investigate neuromuscular function using neurophysiological measurements, 
-    with a focus on identifying objective markers of Intentional Misrepresentation of efforts in strength testing. My work
-    in para-athletes, contributing toward more robust and evidence-based Para sport classification systems.
-</p>
-    </p>
+<!-- ░░ HERO ░░ -->
+<section id="hero">
+  <div class="hero-grid">
+    <div class="hero-content" data-aos>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        PhD Candidate · University of Queensland · 2026
+      </div>
+      <h1 class="hero-title">
+        Priyam<br>
+        <em>Chatterjee</em>
+      </h1>
+      <p class="hero-sub">Neurophysiologist &amp; Para Sport Classification Researcher</p>
+      <p class="hero-desc">Developing objective neurophysiological tools to ensure fairness and integrity in Para sport — bridging the gap between laboratory science and evidence-based classification systems.</p>
+      <div class="hero-actions">
+        <a href="research.html" class="btn btn-primary">View Research</a>
+        <a href="cv.html" class="btn btn-ghost">Download CV</a>
+      </div>
+      <div class="hero-metrics">
+        <div class="metric">
+          <span class="metric-num">11</span>
+          <span class="metric-lbl">Publications</span>
+        </div>
+        <div class="metric-div"></div>
+        <div class="metric">
+          <span class="metric-num">27</span>
+          <span class="metric-lbl">Citations</span>
+        </div>
+        <div class="metric-div"></div>
+        <div class="metric">
+          <span class="metric-num">h=3</span>
+          <span class="metric-lbl">h-index</span>
+        </div>
+        <div class="metric-div"></div>
+        <div class="metric">
+          <span class="metric-num">AUD 150K+</span>
+          <span class="metric-lbl">Research Grant</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" data-aos data-delay="200">
+      <div class="photo-frame">
+        <div class="photo-placeholder">
+          <div class="photo-initials">PC</div>
+          <p class="photo-hint">Your photo here</p>
+        </div>
+        <div class="photo-accent-ring"></div>
+        <div class="photo-accent-dot dot-1"></div>
+        <div class="photo-accent-dot dot-2"></div>
+      </div>
+      <!-- EMG Signal Decoration -->
+      <svg class="emg-deco" viewBox="0 0 320 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polyline class="emg-line" points="0,30 20,30 25,30 30,10 35,50 40,15 45,45 50,28 55,30 80,30 100,30 105,30 108,5 112,55 116,20 120,40 124,30 130,30 160,30 180,30 182,32 186,8 190,52 194,18 198,42 202,30 210,30 240,30 260,30 263,29 268,12 272,48 276,22 280,38 284,30 290,30 320,30"/>
+      </svg>
+      <div class="hero-card-float card-float-1">
+        <div class="float-icon">⚡</div>
+        <div>
+          <div class="float-label">Surface EMG</div>
+          <div class="float-val">Signal Processing</div>
+        </div>
+      </div>
+      <div class="hero-card-float card-float-2">
+        <div class="float-icon">🧠</div>
+        <div>
+          <div class="float-label">TMS</div>
+          <div class="float-val">Motor Cortex</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
 </section>
 
-<section class="fade-in">
-    <h2>Why It Matters</h2>
-    <p>
-        Current para-sport classification systems rely heavily on subjective assessments.
-        My work aims to introduce objective, evidence-based approaches using physiological signals
-        and quantitative modeling.
-    </p>
+<!-- ░░ AFFILIATION STRIP ░░ -->
+<div class="affil-strip">
+  <div class="affil-inner">
+    <span class="affil-label">Affiliated with</span>
+    <div class="affil-list">
+      <span class="affil-item">University of Queensland</span>
+      <span class="affil-sep">·</span>
+      <span class="affil-item">Manchester Metropolitan University</span>
+      <span class="affil-sep">·</span>
+      <span class="affil-item">Sports Medicine Australia</span>
+      <span class="affil-sep">·</span>
+      <span class="affil-item">ESSA</span>
+    </div>
+  </div>
+</div>
+
+<!-- ░░ RESEARCH FOCUS ░░ -->
+<section id="research-section" class="section">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <span class="section-tag">Core Work</span>
+      <h2 class="section-title">Research Focus</h2>
+    </div>
+    <div class="focus-grid">
+      <div class="focus-card" data-aos data-delay="0">
+        <div class="focus-icon-wrap icon-teal">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h2l2-8 3 16 2-12 2 8 2-4h3"/></svg>
+        </div>
+        <h3>Neurophysiological Assessment</h3>
+        <p>Combining surface EMG, transcranial magnetic stimulation (TMS), and motor nerve stimulation to create objective assessment tools for isometric strength testing in para athletes.</p>
+      </div>
+      <div class="focus-card" data-aos data-delay="100">
+        <div class="focus-icon-wrap icon-blue">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>
+        </div>
+        <h3>Para Sport Classification</h3>
+        <p>Developing evidence-based protocols to detect intentional misrepresentation of effort during classification, contributing to fair and transparent Paralympic sport systems worldwide.</p>
+      </div>
+      <div class="focus-card" data-aos data-delay="200">
+        <div class="focus-icon-wrap icon-amber">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Signal Processing &amp; Modelling</h3>
+        <p>Custom MATLAB algorithm development for real-time EMG signal analysis, force-matching paradigm control, and advanced statistical modelling (R, Python, SPSS).</p>
+      </div>
+      <div class="focus-card" data-aos data-delay="300">
+        <div class="focus-icon-wrap icon-coral">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Teaching &amp; Mentorship</h3>
+        <p>Delivering neurophysiology and exercise science to 200+ undergraduates with a 4.75/5.0 student rating. Supervising 4 Honours projects and 20+ Master's students across two universities.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="fade-in">
-    <h2>Research Areas</h2>
-    <ul>
-        <li>Surface EMG and signal processing</li>
-        <li>Motor control and neuromuscular assessment</li>
-        <li>Force control and performance analysis</li>
-        <li>Detection of intentional misrepresentation</li>
-    </ul>
+<!-- ░░ INFOGRAPHIC — METHODS PIPELINE ░░ -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <span class="section-tag section-tag-light">Methodology</span>
+      <h2 class="section-title section-title-light">Research Pipeline</h2>
+      <p class="section-sub section-sub-light">How neurophysiology reveals truth in Para sport assessment</p>
+    </div>
+    <div class="pipeline" data-aos>
+      <div class="pipeline-step">
+        <div class="ps-num">01</div>
+        <div class="ps-icon">
+          <svg viewBox="0 0 40 40" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="10" width="24" height="20" rx="3"/><line x1="14" y1="20" x2="26" y2="20"/><line x1="14" y1="15" x2="20" y2="15"/><line x1="14" y1="25" x2="22" y2="25"/></svg>
+        </div>
+        <h4>Participant Recruitment</h4>
+        <p>50+ para &amp; able-bodied participants; full NHMRC ethics compliance across 200+ sessions</p>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step">
+        <div class="ps-num">02</div>
+        <div class="ps-icon">
+          <svg viewBox="0 0 40 40" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 28 L12 18 L16 24 L20 10 L24 22 L28 16 L32 28"/></svg>
+        </div>
+        <h4>sEMG &amp; Force Recording</h4>
+        <p>Surface EMG + force transducers during variable force-matching paradigm; calibrated every session</p>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step">
+        <div class="ps-num">03</div>
+        <div class="ps-icon">
+          <svg viewBox="0 0 40 40" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="20" cy="20" r="10"/><path d="M20 10 L20 20 L28 20"/><circle cx="20" cy="20" r="2"/></svg>
+        </div>
+        <h4>TMS &amp; MNS</h4>
+        <p>Transcranial magnetic stimulation + motor nerve stimulation to assess voluntary activation &amp; motor cortex excitability</p>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step">
+        <div class="ps-num">04</div>
+        <div class="ps-icon">
+          <svg viewBox="0 0 40 40" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="24" width="6" height="10"/><rect x="17" y="16" width="6" height="18"/><rect x="26" y="8" width="6" height="26"/></svg>
+        </div>
+        <h4>MATLAB Processing</h4>
+        <p>5+ custom algorithms for real-time signal processing; 60% improvement in data handling efficiency</p>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step">
+        <div class="ps-num">05</div>
+        <div class="ps-icon">
+          <svg viewBox="0 0 40 40" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 30 Q20 10 30 30"/><circle cx="15" cy="22" r="2"/><circle cx="20" cy="14" r="2"/><circle cx="25" cy="22" r="2"/></svg>
+        </div>
+        <h4>Statistical Modelling</h4>
+        <p>R, Python &amp; SPSS: regression, multivariate stats, survival analysis; manuscript preparation &amp; peer review</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="fade-in">
-    <h2>Approach</h2>
-    <p>
-        My work integrates experimental physiology, signal processing, and statistical modeling 
-        to bridge the gap between laboratory measurements and applied sport classification.
-    </p>
+<!-- ░░ SKILLS / TECH ░░ -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <span class="section-tag">Expertise</span>
+      <h2 class="section-title">Technical Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group" data-aos>
+        <h4 class="skill-group-title">Neurophysiology</h4>
+        <div class="skill-tags">
+          <span class="stag stag-teal">Surface EMG</span>
+          <span class="stag stag-teal">TMS</span>
+          <span class="stag stag-teal">Motor Nerve Stimulation</span>
+          <span class="stag stag-teal">Voluntary Activation</span>
+          <span class="stag stag-teal">Force Measurement</span>
+          <span class="stag stag-teal">ECG</span>
+          <span class="stag stag-teal">ISAK Level 1</span>
+        </div>
+      </div>
+      <div class="skill-group" data-aos data-delay="100">
+        <h4 class="skill-group-title">Programming &amp; Analysis</h4>
+        <div class="skill-tags">
+          <span class="stag stag-blue">MATLAB</span>
+          <span class="stag stag-blue">Python</span>
+          <span class="stag stag-blue">R</span>
+          <span class="stag stag-blue">SPSS</span>
+          <span class="stag stag-blue">GraphPad Prism</span>
+          <span class="stag stag-blue">Machine Learning</span>
+          <span class="stag stag-blue">Signal Processing</span>
+        </div>
+      </div>
+      <div class="skill-group" data-aos data-delay="200">
+        <h4 class="skill-group-title">Research</h4>
+        <div class="skill-tags">
+          <span class="stag stag-amber">Grant Writing</span>
+          <span class="stag stag-amber">Peer Review</span>
+          <span class="stag stag-amber">Systematic Reviews</span>
+          <span class="stag stag-amber">Meta-analysis</span>
+          <span class="stag stag-amber">HDR Supervision</span>
+          <span class="stag stag-amber">Ethics (NHMRC)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill bars -->
+    <div class="skill-bars" data-aos>
+      <div class="sbar-item">
+        <div class="sbar-head"><span>Surface EMG &amp; Signal Processing</span><span>Expert</span></div>
+        <div class="sbar-track"><div class="sbar-fill" style="--w:92%"></div></div>
+      </div>
+      <div class="sbar-item">
+        <div class="sbar-head"><span>MATLAB Algorithm Development</span><span>Expert</span></div>
+        <div class="sbar-track"><div class="sbar-fill" style="--w:88%"></div></div>
+      </div>
+      <div class="sbar-item">
+        <div class="sbar-head"><span>Statistical Modelling (R / SPSS)</span><span>Advanced</span></div>
+        <div class="sbar-track"><div class="sbar-fill sbar-blue" style="--w:82%"></div></div>
+      </div>
+      <div class="sbar-item">
+        <div class="sbar-head"><span>Python &amp; Machine Learning</span><span>Proficient</span></div>
+        <div class="sbar-track"><div class="sbar-fill sbar-blue" style="--w:70%"></div></div>
+      </div>
+      <div class="sbar-item">
+        <div class="sbar-head"><span>Scientific Writing &amp; Peer Review</span><span>Expert</span></div>
+        <div class="sbar-track"><div class="sbar-fill sbar-amber" style="--w:90%"></div></div>
+      </div>
+    </div>
+  </div>
 </section>
-    
+
+<!-- ░░ SELECTED PUBLICATIONS ░░ -->
+<section class="section section-pale">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <span class="section-tag">Output</span>
+      <h2 class="section-title">Selected Publications</h2>
+      <p class="section-sub">11 peer-reviewed articles · h-index 3 · 27 citations</p>
+    </div>
+    <div class="pub-list" data-aos>
+      <div class="pub-item">
+        <span class="pub-year">2025</span>
+        <div class="pub-body">
+          <p class="pub-title">Neuromuscular adaptations in handgrip force control: An electromyographic comparison</p>
+          <p class="pub-meta">Majumdar, Pal, <strong>Chatterjee</strong>, Bandyopadhyay · <em>Int. J. Physical Education, Sports and Health</em>, 12(4)</p>
+        </div>
+        <span class="pub-badge pub-badge-new">2025</span>
+      </div>
+      <div class="pub-item">
+        <span class="pub-year">2025</span>
+        <div class="pub-body">
+          <p class="pub-title">Motor neuron discharge patterns of gastrocnemius muscle in two different glycemic states</p>
+          <p class="pub-meta">Bose, Pal, <strong>Chatterjee</strong>, Bandyopadhyay · <em>Progress in Health Sciences</em>, 15(2)</p>
+        </div>
+        <span class="pub-badge pub-badge-new">Online First</span>
+      </div>
+      <div class="pub-item">
+        <span class="pub-year">2023</span>
+        <div class="pub-body">
+          <p class="pub-title">Motor Units Involvement in Diaphragm and Intercostal Muscles During Supine and Prone Posture</p>
+          <p class="pub-meta">Saba, <strong>Chatterjee</strong>, Bandyopadhyay · <em>Indian J. Physiology and Pharmacology</em>, 67(4)</p>
+        </div>
+      </div>
+      <div class="pub-item">
+        <span class="pub-year">2022</span>
+        <div class="pub-body">
+          <p class="pub-title">Assessment of Electrophysiological Changes in the Heart — Trained Male Volleyball Players</p>
+          <p class="pub-meta"><strong>Chatterjee</strong>, Bandyopadhyay · <em>Medical Science Pulse</em>, 16(3)</p>
+        </div>
+      </div>
+      <div class="pub-item">
+        <span class="pub-year">2021</span>
+        <div class="pub-body">
+          <p class="pub-title">Formulation of regression equation on endurance time and fatigue indices in biceps brachii via sEMG</p>
+          <p class="pub-meta"><strong>Chatterjee</strong>, Nandy, Bandyopadhyay · <em>Int. J. Physical Education, Sports and Health</em>, 8(6)</p>
+        </div>
+      </div>
+    </div>
+    <div class="pub-footer" data-aos>
+      <a href="publications.html" class="btn btn-outline">View All Publications →</a>
+      <a href="https://orcid.org/0000-0002-8303-2395" target="_blank" class="btn btn-ghost-sm">ORCID Profile ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ AWARDS ░░ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <span class="section-tag">Recognition</span>
+      <h2 class="section-title">Grants &amp; Awards</h2>
+    </div>
+    <div class="awards-timeline" data-aos>
+      <div class="awd-item">
+        <div class="awd-year">2026</div>
+        <div class="awd-dot"></div>
+        <div class="awd-content">
+          <h4>Dr Alf Howard International Travel Scholarship</h4>
+          <p>Competitive grant — School of HMNS, University of Queensland</p>
+        </div>
+      </div>
+      <div class="awd-item">
+        <div class="awd-year">2024–</div>
+        <div class="awd-dot awd-dot-gold"></div>
+        <div class="awd-content">
+          <h4>International Research Collaboration Grant — Co-Investigator</h4>
+          <p>AUD $150,000+ · "Transforming World Para Swimming Classification with sEMG" · Manchester Metropolitan University</p>
+        </div>
+      </div>
+      <div class="awd-item">
+        <div class="awd-year">2023–26</div>
+        <div class="awd-dot awd-dot-gold"></div>
+        <div class="awd-content">
+          <h4>UQ Graduate School Scholarship</h4>
+          <p>AUD $120,000+ — Full tuition + living stipend, University of Queensland</p>
+        </div>
+      </div>
+      <div class="awd-item">
+        <div class="awd-year">2019–21</div>
+        <div class="awd-dot"></div>
+        <div class="awd-content">
+          <h4>West Bengal Government M.Phil. Fellowship</h4>
+          <p>24-month research funding</p>
+        </div>
+      </div>
+      <div class="awd-item">
+        <div class="awd-year">2019</div>
+        <div class="awd-dot"></div>
+        <div class="awd-content">
+          <h4>Prof. P. K. Bardhan Memorial Award</h4>
+          <p>Ranked 1st in cohort — M.Sc. examination, University of Calcutta</p>
+        </div>
+      </div>
+      <div class="awd-item">
+        <div class="awd-year">2018</div>
+        <div class="awd-dot awd-dot-accent"></div>
+        <div class="awd-content">
+          <h4>Best Poster Award × 2</h4>
+          <p>PHYSICON-2018 (Physiological Society of India) · BIMACON-2017 (All Bengal IMA Conference)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ EDUCATION ░░ -->
+<section class="section section-pale">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <span class="section-tag">Academic Background</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+    <div class="edu-cards" data-aos>
+      <div class="edu-card edu-card-featured">
+        <div class="edu-flag">Current</div>
+        <div class="edu-top">
+          <div class="edu-uni-logo">UQ</div>
+          <div>
+            <h3>Ph.D. Candidate</h3>
+            <p class="edu-uni">University of Queensland, Australia</p>
+            <p class="edu-date">April 2023 – September 2026 (Expected)</p>
+          </div>
+        </div>
+        <p class="edu-thesis"><strong>Thesis:</strong> Neurophysiological Assessment Tools for Detecting Intentional Misrepresentation in Para Sport Classification During Strength Assessment</p>
+        <div class="edu-supervisors">
+          <span>Supervisors:</span> Dr. Emma Beckman · Prof. Timothy Carroll · Prof. Sean Tweedy
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-top">
+          <div class="edu-uni-logo edu-logo-sm">CU</div>
+          <div>
+            <h3>M.Sc. Human Physiology</h3>
+            <p class="edu-uni">University of Calcutta, India</p>
+            <p class="edu-date">2016 – 2018</p>
+          </div>
+        </div>
+        <p class="edu-note">Ranked 1st in cohort · GPA 5.03/6.00 · First Class with Outstanding</p>
+      </div>
+      <div class="edu-card">
+        <div class="edu-top">
+          <div class="edu-uni-logo edu-logo-sm">CU</div>
+          <div>
+            <h3>B.Sc. Honours — Physiology</h3>
+            <p class="edu-uni">University of Calcutta, India</p>
+            <p class="edu-date">2013 – 2016</p>
+          </div>
+        </div>
+        <p class="edu-note">First Class Honours · Late A.N. Banerjee Memorial Prize</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ CONTACT CTA ░░ -->
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-inner" data-aos>
+      <div class="cta-text">
+        <h2>Let's Connect</h2>
+        <p>Open to research collaborations, speaking invitations, and academic opportunities in neurophysiology and para sport science.</p>
+      </div>
+      <div class="cta-links">
+        <a href="mailto:p.chatterjee@uq.edu.au" class="cta-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          p.chatterjee@uq.edu.au
+        </a>
+        <a href="https://www.linkedin.com/in/chatterjipriyam" target="_blank" class="cta-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://orcid.org/0000-0002-8303-2395" target="_blank" class="cta-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9 8h1.5a2.5 2.5 0 0 1 0 5H9V8zm0 8v-3"/></svg>
+          ORCID
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ FOOTER ░░ -->
 <footer>
-    <p>© 2026 Priyam Chatterjee</p>
+  <div class="footer-inner">
+    <div class="footer-left">
+      <span class="footer-logo">Priyam Chatterjee</span>
+      <p>PhD Candidate · Neurophysiology &amp; Para Sport</p>
+      <p>School of Human Movement and Nutrition Sciences, UQ</p>
+    </div>
+    <div class="footer-right">
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 Priyam Chatterjee</p>
+    </div>
+  </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
