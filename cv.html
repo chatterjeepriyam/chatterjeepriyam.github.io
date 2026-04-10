@@ -3,33 +3,222 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV</title>
+<title>CV — Priyam Chatterjee</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<style>
+.page-hero { padding: 120px 2rem 60px; background: var(--bg-2); border-bottom: 1px solid var(--border); }
+.cv-section-title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--teal); margin-bottom: 1rem;
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.cv-section-title::after {
+  content: ''; flex: 1; height: 1px; background: var(--border);
+}
+.cv-row {
+  display: grid; grid-template-columns: 160px 1fr;
+  gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+.cv-date {
+  font-family: var(--font-mono); font-size: 0.72rem;
+  color: var(--text-dim); line-height: 1.5; padding-top: 2px;
+}
+.cv-body h4 {
+  font-family: var(--font-head); font-size: 0.95rem; font-weight: 600;
+  color: var(--white); margin-bottom: 2px;
+}
+.cv-body h4 em { font-style: normal; color: var(--teal); font-weight: 400; }
+.cv-body .cv-inst { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 6px; }
+.cv-body ul { list-style: none; padding: 0; }
+.cv-body ul li {
+  font-size: 0.82rem; color: var(--text-muted);
+  padding: 2px 0 2px 16px; position: relative;
+}
+.cv-body ul li::before {
+  content: '—'; position: absolute; left: 0;
+  color: var(--text-dim);
+}
+.cv-dl-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--teal); color: #0a0d12;
+  padding: 12px 28px; border-radius: 8px;
+  font-weight: 600; font-size: 0.9rem;
+  transition: all 0.25s ease;
+  margin-bottom: 3rem;
+}
+.cv-dl-btn:hover { background: #00f0c0; transform: translateY(-2px); }
+@media (max-width: 600px) {
+  .cv-row { grid-template-columns: 1fr; }
+  .cv-date { padding-bottom: 0; }
+}
+</style>
 </head>
-
 <body>
-
-<nav>
-<a href="index.html">Home</a>
-<a href="cv.html">CV</a>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">PC</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html" class="active">CV</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+  </div>
 </nav>
 
-<section class="fade-in">
-<h2>Curriculum Vitae</h2>
+<div class="page-hero">
+  <div class="container">
+    <span class="section-tag">Curriculum Vitae</span>
+    <h1 class="section-title" style="margin-top:0.75rem;">Priyam Chatterjee</h1>
+    <p class="section-sub">PhD Candidate · Neurophysiologist · Para Sport Researcher</p>
+  </div>
+</div>
 
-<p>Download CV: (add PDF link later)</p>
+<section class="section">
+  <div class="container">
 
-<h3>Education</h3>
-<p>PhD in Sports & Exercise Physiology</p>
+    <a href="#" class="cv-dl-btn" onclick="alert('Place your CV PDF here — rename file to Priyam_Chatterjee_CV.pdf and link to it.')">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download Full CV (PDF)
+    </a>
 
-<h3>Skills</h3>
-<ul>
-<li>Surface EMG analysis</li>
-<li>MATLAB, R, statistical modeling</li>
-<li>Neuromuscular assessment</li>
-</ul>
+    <!-- Summary -->
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin-bottom:2.5rem;" data-aos>
+      <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.75;">Final-year Ph.D. researcher specialising in Para sport classification and neurophysiology with demonstrated research impact <strong style="color:var(--white)">(h-index: 3, 27 citations, 11 peer-reviewed articles)</strong>. Proven teaching effectiveness (4.75/5.0 student rating) delivering instruction to 200+ undergraduates. Expertise in surface EMG, TMS, force measurement, and advanced statistical modelling. Co-investigator on an AUD $150K+ international research grant with Manchester Metropolitan University.</p>
+    </div>
 
+    <!-- Education -->
+    <div class="cv-section-title" data-aos>Education</div>
+    <div class="cv-row" data-aos>
+      <div class="cv-date">Apr 2023 –<br>Sep 2026 (Exp.)</div>
+      <div class="cv-body">
+        <h4>PhD Candidate — School of Human Movement &amp; Nutrition Sciences <em>· University of Queensland, Australia</em></h4>
+        <p class="cv-inst">Supervisors: Dr. Emma Beckman · Prof. Timothy Carroll · Prof. Sean Tweedy</p>
+        <ul>
+          <li>Thesis: Neurophysiological Assessment Tools for Detecting Intentional Misrepresentation in Para Sport Classification</li>
+          <li>Funding: UQ Graduate School Scholarship (AUD $120,000+ — full tuition + living stipend)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cv-row" data-aos>
+      <div class="cv-date">Jul 2016 – Sep 2018</div>
+      <div class="cv-body">
+        <h4>M.Sc. Human Physiology — Sports &amp; Exercise Physiology <em>· University of Calcutta, India</em></h4>
+        <ul>
+          <li>Ranked 1st in cohort · GPA 5.03/6.00 · First Class with Outstanding</li>
+          <li>Prof. P. K. Bardhan Memorial Award for highest marks</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cv-row" data-aos>
+      <div class="cv-date">Jul 2013 – Jun 2016</div>
+      <div class="cv-body">
+        <h4>B.Sc. Honours — Physiology <em>· University of Calcutta, India</em></h4>
+        <ul>
+          <li>First Class Honours</li>
+          <li>Late Amarendra Nath Banerjee Memorial Prize (80%+ in practical examinations)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Research Experience -->
+    <div class="cv-section-title" data-aos style="margin-top:2rem;">Research Experience</div>
+    <div class="cv-row" data-aos>
+      <div class="cv-date">Apr 2023 – Present</div>
+      <div class="cv-body">
+        <h4>PhD Researcher — Para Sport Classification &amp; Neurophysiology <em>· UQ</em></h4>
+        <ul>
+          <li>Pioneered neurophysiological detection protocol (sEMG + TMS + MNS) for isometric strength assessment</li>
+          <li>Developed 5+ custom MATLAB algorithms — 60% improvement in data processing efficiency</li>
+          <li>Recruited and tested 50+ participants across 200+ sessions with 100% ethics compliance</li>
+          <li>Co-Investigator on AUD $150,000+ international grant with Manchester Metropolitan University</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cv-row" data-aos>
+      <div class="cv-date">Feb 2022</div>
+      <div class="cv-body">
+        <h4>Research Trainee — Biostatistics <em>· Indian Statistical Institute, Kolkata</em></h4>
+        <ul>
+          <li>Intensive training: regression, survival analysis, multivariate statistics (IBM SPSS)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Teaching -->
+    <div class="cv-section-title" data-aos style="margin-top:2rem;">Teaching &amp; Supervision</div>
+    <div class="cv-row" data-aos>
+      <div class="cv-date">2023 – Present</div>
+      <div class="cv-body">
+        <h4>Casual Academic Tutor &amp; Practical Coordinator <em>· UQ</em></h4>
+        <ul>
+          <li>200+ undergraduates across NEUR2530, NEUR3733, EXMD2382</li>
+          <li>SECaT score 4.75/5.0 — top 10% for engagement and clarity</li>
+          <li>Coordinated 30+ practical lab sessions (EMG, force, TMS)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cv-row" data-aos>
+      <div class="cv-date">2023 – 2025</div>
+      <div class="cv-body">
+        <h4>Research Supervisor — Honours Projects (HMST4925) <em>· UQ</em></h4>
+        <ul><li>Supervised 4 Honours projects in neurophysiology — 100% completion rate</li></ul>
+      </div>
+    </div>
+    <div class="cv-row" data-aos>
+      <div class="cv-date">2019 – 2025</div>
+      <div class="cv-body">
+        <h4>Research Mentor — Master's Projects <em>· University of Calcutta</em></h4>
+        <ul><li>Co-supervised 20+ M.Sc. projects → multiple peer-reviewed publications</li></ul>
+      </div>
+    </div>
+
+    <!-- Awards -->
+    <div class="cv-section-title" data-aos style="margin-top:2rem;">Grants, Scholarships &amp; Awards</div>
+    <div class="cv-row" data-aos><div class="cv-date">2026</div><div class="cv-body"><h4>Dr Alf Howard International Travel Scholarship <em>· School of HMNS, UQ</em></h4></div></div>
+    <div class="cv-row" data-aos><div class="cv-date">2024 –</div><div class="cv-body"><h4>International Research Collaboration Grant — Co-Investigator <em>· AUD $150,000+</em></h4><p class="cv-inst">"Transforming the World Para Swimming Classification System with Surface EMG" — MMU &amp; UQ</p></div></div>
+    <div class="cv-row" data-aos><div class="cv-date">2023 – 2026</div><div class="cv-body"><h4>UQ Graduate School Scholarship <em>· AUD $120,000+</em></h4></div></div>
+    <div class="cv-row" data-aos><div class="cv-date">2019 – 2021</div><div class="cv-body"><h4>West Bengal Government M.Phil. Fellowship <em>· 24-month research funding</em></h4></div></div>
+    <div class="cv-row" data-aos><div class="cv-date">2019</div><div class="cv-body"><h4>Prof. P. K. Bardhan Memorial Award <em>· Ranked 1st, M.Sc. University of Calcutta</em></h4></div></div>
+    <div class="cv-row" data-aos><div class="cv-date">2018</div><div class="cv-body"><h4>Best Poster Award <em>· PHYSICON-2018, Physiological Society of India</em></h4></div></div>
+    <div class="cv-row" data-aos><div class="cv-date">2017</div><div class="cv-body"><h4>Best Poster Award <em>· BIMACON-2017, 76th All Bengal IMA Conference</em></h4></div></div>
+    <div class="cv-row" data-aos><div class="cv-date">2016</div><div class="cv-body"><h4>Late Amarendra Nath Banerjee Memorial Prize <em>· B.Sc. Practical Examinations, University of Calcutta</em></h4></div></div>
+
+    <!-- Memberships -->
+    <div class="cv-section-title" data-aos style="margin-top:2rem;">Professional Memberships</div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;padding:1rem 0;" data-aos>
+      <span class="stag stag-teal">Sports Medicine Australia — PhD Student Associate (2025–)</span>
+      <span class="stag stag-blue">ESSA — Student Member (2025–)</span>
+      <span class="stag stag-amber">Universitas 21 — Global Citizen Certified (2025)</span>
+    </div>
+
+  </div>
 </section>
 
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">
+      <span class="footer-logo">Priyam Chatterjee</span>
+      <p>PhD Candidate · Neurophysiology &amp; Para Sport</p>
+    </div>
+    <div class="footer-right">
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">© 2026 Priyam Chatterjee</p>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>
