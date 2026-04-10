@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Research themes of Priyam Chatterjee — sEMG, motor control, and Para sport classification." />
+  <title>Research | Priyam Chatterjee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">Priyam Chatterjee</a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="dark-toggle" id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Page Header ===== -->
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span aria-hidden="true"> / </span><span aria-current="page">Research</span>
+      </nav>
+      <h1>Research</h1>
+      <p>Neurophysiology, motor control, and Para sport classification integrity</p>
+    </div>
+  </header>
+
+  <!-- ===== Overview ===== -->
+  <section class="section" aria-labelledby="overview-heading">
+    <div class="container">
+      <div style="max-width: 760px;">
+        <h2 class="section-title" id="overview-heading">Overview</h2>
+        <p class="reveal">
+          My research programme investigates how neurophysiological measurements — particularly surface
+          electromyography (sEMG) — can be used to objectively characterise impairment in Paralympic
+          athletes and to detect intentional misrepresentation during functional classification assessments.
+        </p>
+        <p class="reveal">
+          Classification determines which sport class an athlete competes in, and therefore has significant
+          implications for fairness. Current systems rely heavily on clinical observation, which can be
+          manipulated. I am building signal-processing and machine-learning pipelines that make it harder
+          to "game" the system while remaining practical for real-world use.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Research Themes ===== -->
+  <section class="section section-alt" aria-labelledby="themes-heading">
+    <div class="container">
+      <h2 class="section-title" id="themes-heading">Research Themes</h2>
+      <p class="section-subtitle">Three interconnected pillars of my doctoral work</p>
+
+      <!-- Theme 1: sEMG -->
+      <div class="research-theme reveal">
+        <div class="research-theme-icon" aria-hidden="true">⚡</div>
+        <div>
+          <h3>1 · Surface Electromyography (sEMG)</h3>
+          <p>
+            sEMG records the electrical activity produced by skeletal muscles during contraction.
+            I use both conventional and high-density electrode grids to capture motor unit action
+            potential trains and global muscle activation envelopes.
+          </p>
+          <p>
+            Key questions I address with sEMG:
+          </p>
+          <ul style="list-style: disc; padding-left: 1.25rem; color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
+            <li>How do motor unit recruitment thresholds differ between athletes with and without impairments?</li>
+            <li>Can submaximal effort be reliably distinguished from maximal effort using sEMG features?</li>
+            <li>What is the test-retest reliability of sEMG measures across classification assessment sessions?</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">High-density EMG</span>
+            <span class="tag">Motor unit decomposition</span>
+            <span class="tag">Signal reliability</span>
+            <span class="tag">Feature extraction</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Theme 2: Motor Control -->
+      <div class="research-theme reveal">
+        <div class="research-theme-icon" aria-hidden="true">🧠</div>
+        <div>
+          <h3>2 · Motor Control &amp; Neuromuscular Adaptation</h3>
+          <p>
+            Understanding how injury, disease, or limb deficiency alters the way the nervous system
+            organises voluntary movement. I combine EMG with biomechanical measures and clinical
+            assessments to characterise impairment across a spectrum of severity.
+          </p>
+          <p>
+            Research activities include:
+          </p>
+          <ul style="list-style: disc; padding-left: 1.25rem; color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
+            <li>Measuring maximal voluntary contraction and force–EMG relationships in Para athletes</li>
+            <li>Characterising inter-limb asymmetry using multi-site EMG</li>
+            <li>Assessing neural drive and common synaptic input to motoneuron pools</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">MVC</span>
+            <span class="tag">Neural drive</span>
+            <span class="tag">Inter-limb asymmetry</span>
+            <span class="tag">Proprioception</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Theme 3: Classification Systems -->
+      <div class="research-theme reveal">
+        <div class="research-theme-icon" aria-hidden="true">🏅</div>
+        <div>
+          <h3>3 · Para Sport Classification Systems</h3>
+          <p>
+            Paralympic classification assigns athletes to sport classes based on the degree to which
+            an eligible impairment affects sport-specific activities. Despite decades of development,
+            the field lacks robust, objective tools to detect intentional misrepresentation —
+            athletes feigning greater impairment than they possess.
+          </p>
+          <p>
+            My classification research addresses:
+          </p>
+          <ul style="list-style: disc; padding-left: 1.25rem; color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
+            <li>Systematic review of existing evidence on measurement of intentional misrepresentation</li>
+            <li>Development of sEMG-based test batteries for functional classification activities</li>
+            <li>Training and validating ML classifiers to distinguish genuine from simulated impairment</li>
+            <li>Proposing policy frameworks for integrating objective tools into classification protocols</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">IPC framework</span>
+            <span class="tag">Minimal impairment criteria</span>
+            <span class="tag">Evidence-based classification</span>
+            <span class="tag">Simulated impairment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Methodology ===== -->
+  <section class="section" aria-labelledby="methods-heading">
+    <div class="container">
+      <h2 class="section-title" id="methods-heading">Methods &amp; Tools</h2>
+      <p class="section-subtitle">The experimental and computational approaches I employ</p>
+
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="card-icon">📡</div>
+          <h3>Electrophysiology</h3>
+          <p>Delsys Trigno wireless EMG, OT Bioelettronica HD-EMG grids, force transducers, dynamometry.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">🐍</div>
+          <h3>Data Analysis</h3>
+          <p>Python (NumPy, SciPy, scikit-learn, MNE), MATLAB, R for statistical modelling and signal processing.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">🤖</div>
+          <h3>Machine Learning</h3>
+          <p>Support vector machines, random forests, gradient boosting, and neural networks for EMG classification.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">📐</div>
+          <h3>Biomechanics</h3>
+          <p>3D motion capture, force plates, gait analysis — integrated with EMG for multi-modal assessment.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">📚</div>
+          <h3>Systematic Review</h3>
+          <p>PRISMA-compliant reviews of classification measurement literature and psychometric properties of tests.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">🧪</div>
+          <h3>Clinical Assessment</h3>
+          <p>Standardised manual muscle testing, functional reach, grip dynamometry per IPC classification rules.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Collaborations ===== -->
+  <section class="section section-alt" aria-labelledby="collab-heading">
+    <div class="container">
+      <div style="max-width: 760px;">
+        <h2 class="section-title" id="collab-heading">Collaborations &amp; Affiliations</h2>
+        <p class="reveal">
+          I am open to collaborations with sports scientists, neurologists, physiotherapists, and
+          data scientists working on related problems. I am also affiliated with national and
+          international Para sport classification bodies through my supervisory team.
+        </p>
+        <p class="reveal">
+          Interested in collaborating? <a href="contact.html">Get in touch →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <p>© <span id="footer-year"></span> Priyam Chatterjee. Built with HTML &amp; CSS.</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

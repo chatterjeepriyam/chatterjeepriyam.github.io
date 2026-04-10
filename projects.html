@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Research projects by Priyam Chatterjee — EMG-based classification, signal processing, and machine learning for Para sport." />
+  <title>Projects | Priyam Chatterjee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">Priyam Chatterjee</a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="dark-toggle" id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Page Header ===== -->
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span aria-hidden="true"> / </span><span aria-current="page">Projects</span>
+      </nav>
+      <h1>Projects</h1>
+      <p>Applied research and software tools for EMG analysis and Para sport classification</p>
+    </div>
+  </header>
+
+  <!-- ===== Featured Projects ===== -->
+  <section class="section" aria-labelledby="featured-heading">
+    <div class="container">
+      <h2 class="section-title" id="featured-heading">Featured Projects</h2>
+      <p class="section-subtitle">Active and completed research and software development projects</p>
+
+      <div class="grid-2" style="margin-top: 1.5rem;">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <h3>EMG-Based Effort Classifier</h3>
+            <p class="project-subtitle">Machine learning · Signal processing · Python</p>
+          </div>
+          <div class="project-card-body">
+            <p>
+              A Python pipeline that ingests multi-channel sEMG signals, extracts time-domain and
+              frequency-domain features, and trains a supervised classifier to distinguish maximal
+              from submaximal voluntary contractions in athletes with physical impairments.
+            </p>
+            <p><strong style="color: var(--color-text); font-size: 0.875rem;">Methods:</strong></p>
+            <ul class="method-list">
+              <li>Band-pass filtering (20–500 Hz) and notch filtering (50 Hz)</li>
+              <li>Root mean square (RMS), mean absolute value (MAV), waveform length</li>
+              <li>Mean power frequency (MNF), median frequency (MDF) via Welch PSD</li>
+              <li>Wavelet packet decomposition for time-frequency features</li>
+              <li>Support Vector Machine (RBF kernel) with nested cross-validation</li>
+              <li>SHAP values for model interpretability</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">scikit-learn</span>
+              <span class="tag">SVM</span>
+              <span class="tag">Wavelet</span>
+              <span class="tag">SHAP</span>
+            </div>
+            <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <a href="https://github.com/chatterjeepriyam" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <h3>HD-EMG Motor Unit Analysis</h3>
+            <p class="project-subtitle">Neurophysiology · MATLAB/Python · High-density arrays</p>
+          </div>
+          <div class="project-card-body">
+            <p>
+              High-density EMG decomposition toolbox for extracting individual motor unit action
+              potential trains from 64-channel electrode grid recordings. Used to characterise
+              motor unit properties in Paralympic athletes.
+            </p>
+            <p><strong style="color: var(--color-text); font-size: 0.875rem;">Methods:</strong></p>
+            <ul class="method-list">
+              <li>Convolutive blind source separation (fastICA / gradient CKC)</li>
+              <li>Motor unit discharge rate estimation and inter-spike interval analysis</li>
+              <li>Pulse-to-noise ratio (PNR) quality filtering</li>
+              <li>Cumulative spike train analysis for common synaptic input</li>
+              <li>Synchronisation index between motor unit pairs</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">HD-EMG</span>
+              <span class="tag">BSS/ICA</span>
+              <span class="tag">Motor units</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">Python</span>
+            </div>
+            <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <a href="https://github.com/chatterjeepriyam" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <h3>Para Classification Evidence Database</h3>
+            <p class="project-subtitle">Systematic review · Data curation · R</p>
+          </div>
+          <div class="project-card-body">
+            <p>
+              A curated, structured database of peer-reviewed studies on objective measurement
+              tools used in Para sport classification, extracted and synthesised via PRISMA-compliant
+              systematic review methodology.
+            </p>
+            <p><strong style="color: var(--color-text); font-size: 0.875rem;">Methods:</strong></p>
+            <ul class="method-list">
+              <li>Boolean search across PubMed, SPORTDiscus, Web of Science, Scopus</li>
+              <li>Two-reviewer title/abstract and full-text screening (Rayyan)</li>
+              <li>Risk of bias assessment (COSMIN, RoB 2)</li>
+              <li>Narrative synthesis and evidence mapping in R (ggplot2, meta)</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Systematic review</span>
+              <span class="tag">R</span>
+              <span class="tag">Meta-analysis</span>
+              <span class="tag">COSMIN</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <h3>Classification Simulation Protocol</h3>
+            <p class="project-subtitle">Experimental design · Clinical · Biomechanics</p>
+          </div>
+          <div class="project-card-body">
+            <p>
+              An experimental protocol for healthy volunteers to simulate impairment during
+              standardised functional classification tests, providing ground-truth data for
+              training and evaluating detection algorithms.
+            </p>
+            <p><strong style="color: var(--color-text); font-size: 0.875rem;">Methods:</strong></p>
+            <ul class="method-list">
+              <li>Standardised submaximal effort targets (25%, 50%, 75% MVC)</li>
+              <li>Biofeedback control to maintain target force levels</li>
+              <li>Simultaneous sEMG, force, and motion capture recording</li>
+              <li>Blind randomisation of effort levels across trials</li>
+              <li>Ethics approved — [University Ethics Committee Ref: XXX]</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Experimental</span>
+              <span class="tag">Force biofeedback</span>
+              <span class="tag">Motion capture</span>
+              <span class="tag">Ethics approved</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Tools & Software ===== -->
+  <section class="section section-alt" aria-labelledby="tools-heading">
+    <div class="container">
+      <h2 class="section-title" id="tools-heading">Tools &amp; Software</h2>
+      <p class="section-subtitle">Open-source packages and scripts I maintain or contribute to</p>
+
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="card-icon">🐍</div>
+          <h3>emg-features</h3>
+          <p>Python library for batch extraction of time- and frequency-domain EMG features from multi-channel recordings.</p>
+          <div class="tags" style="margin-top: 0.5rem;">
+            <span class="tag">Python</span>
+            <span class="tag">Open source</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">📊</div>
+          <h3>classification-viz</h3>
+          <p>R Shiny dashboard for visualising sEMG classification results and comparing test conditions interactively.</p>
+          <div class="tags" style="margin-top: 0.5rem;">
+            <span class="tag">R</span>
+            <span class="tag">Shiny</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">⚙️</div>
+          <h3>Protocol Templates</h3>
+          <p>Standardised data collection templates and analysis scripts for Para sport classification assessments.</p>
+          <div class="tags" style="margin-top: 0.5rem;">
+            <span class="tag">MATLAB</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal mt-3">
+        <a href="https://github.com/chatterjeepriyam" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          🐙 View all on GitHub →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <p>© <span id="footer-year"></span> Priyam Chatterjee. Built with HTML &amp; CSS.</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blog — notes, reflections, and research updates by Priyam Chatterjee." />
+  <title>Blog | Priyam Chatterjee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="nav-brand">Priyam Chatterjee</a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../research.html">Research</a></li>
+        <li><a href="../publications.html">Publications</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../cv.html">CV</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <button class="dark-toggle" id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Page Header ===== -->
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a><span aria-hidden="true"> / </span><span aria-current="page">Blog</span>
+      </nav>
+      <h1>Blog</h1>
+      <p>Notes on research, methods, PhD life, and Para sport science</p>
+    </div>
+  </header>
+
+  <!-- ===== Blog Posts ===== -->
+  <section class="section" aria-labelledby="blog-heading">
+    <div class="container">
+      <h2 class="section-title" id="blog-heading">Posts</h2>
+      <p class="section-subtitle">Coming soon — this section is a scaffold for future posts</p>
+
+      <div style="max-width: 720px;">
+
+        <!-- Placeholder post 1 -->
+        <div class="blog-post-card reveal mb-2">
+          <p class="blog-date">January 2025</p>
+          <h3><a href="#">Why sEMG is harder than it looks (and why I love it anyway)</a></h3>
+          <p>
+            Surface electromyography promises an objective window into the nervous system, but the
+            reality is messier — crosstalk, electrode placement variability, and normalisation headaches.
+            In this post I reflect on the first year of my PhD working with EMG data daily.
+          </p>
+          <div class="tags">
+            <span class="tag">sEMG</span>
+            <span class="tag">Methods</span>
+            <span class="tag">PhD reflections</span>
+          </div>
+        </div>
+
+        <!-- Placeholder post 2 -->
+        <div class="blog-post-card reveal mb-2">
+          <p class="blog-date">November 2024</p>
+          <h3><a href="#">What is Para sport classification and why does it matter?</a></h3>
+          <p>
+            A primer on how Paralympic athletes are assigned to sport classes, the ongoing debate
+            about evidence-based classification, and why detecting intentional misrepresentation
+            is a scientific and ethical priority.
+          </p>
+          <div class="tags">
+            <span class="tag">Para sport</span>
+            <span class="tag">Classification</span>
+            <span class="tag">Explainer</span>
+          </div>
+        </div>
+
+        <!-- Placeholder post 3 -->
+        <div class="blog-post-card reveal">
+          <p class="blog-date">August 2024</p>
+          <h3><a href="#">Machine learning for biosignals: a gentle introduction</a></h3>
+          <p>
+            From raw EMG samples to a trained classifier in under 200 lines of Python.
+            I walk through feature extraction, cross-validation pitfalls, and how to avoid
+            data leakage when working with repeated-measures physiological data.
+          </p>
+          <div class="tags">
+            <span class="tag">Machine learning</span>
+            <span class="tag">Python</span>
+            <span class="tag">Tutorial</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <p>© <span id="footer-year"></span> Priyam Chatterjee. Built with HTML &amp; CSS.</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="../index.html">Home</a>
+          <a href="../research.html">Research</a>
+          <a href="../publications.html">Publications</a>
+          <a href="../contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
