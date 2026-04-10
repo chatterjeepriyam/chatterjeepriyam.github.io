@@ -111,10 +111,14 @@
     /* ─── HERO ─── */
     #hero {
       min-height: 100vh;
-      display: flex; flex-direction: column; justify-content: center;
-      padding: 120px 60px 80px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 100px 60px 60px;
       position: relative;
       overflow: hidden;
+      gap: 40px;
     }
 
     .hero-bg {
@@ -132,7 +136,7 @@
       mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
     }
 
-    .hero-content { position: relative; z-index: 1; max-width: 900px; }
+    .hero-content { position: relative; z-index: 1; max-width: 560px; flex: 1; }
 
     .hero-tag {
       display: inline-flex; align-items: center; gap: 8px;
@@ -274,9 +278,10 @@
 
     /* ─── HERO VISUAL CARD ─── */
     .hero-photo-wrap {
-      position: absolute;
-      right: 60px; top: 50%; transform: translateY(-50%);
+      position: relative;
+      right: auto; top: auto; transform: none;
       z-index: 1;
+      flex-shrink: 0;
       opacity: 0;
       animation: fadeIn 1s 0.8s forwards;
     }
@@ -1185,8 +1190,8 @@
         display: block; padding: 14px 24px;
         border-bottom: 1px solid var(--border);
       }
-      #hero { padding: 100px 24px 60px; }
-      .hero-photo-wrap { display: none; }
+      #hero { padding: 100px 24px 60px; flex-direction: column; justify-content: center; gap: 48px; }
+      .hero-photo-wrap { width: 100%; max-width: 340px; margin: 0 auto; }
       .hero-stats { gap: 0; flex-wrap: wrap; }
       .stat-item { padding: 0 16px 0 0; margin-right: 16px; }
       section { padding: 60px 24px; }
