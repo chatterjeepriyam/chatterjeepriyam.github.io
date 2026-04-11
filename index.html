@@ -78,13 +78,14 @@
     nav.scrolled { padding: 14px 60px; }
 
     .nav-logo {
-      display: flex;
-      align-items: center;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+      color: var(--text);
       text-decoration: none;
-      transition: opacity 0.2s;
     }
-    .nav-logo:hover { opacity: 0.8; }
-    .nav-logo span { display: none; }
+    .nav-logo span { color: var(--accent); }
 
     .nav-links { display: flex; gap: 36px; list-style: none; }
     .nav-links a {
@@ -1207,9 +1208,7 @@
 
 <!-- ─── NAV ─── -->
 <nav id="navbar">
-  <a class="nav-logo" href="#hero">
-    <img src="images/logo.png" alt="PC Logo" style="height:42px;width:42px;object-fit:contain;display:block;">
-  </a>
+  <a class="nav-logo" href="#hero">PC<span>.</span></a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#research">Research</a></li>
@@ -1942,10 +1941,7 @@
 
 <!-- ─── FOOTER ─── -->
 <footer>
-  <p>
-    <img src="images/logo.png" alt="PC" style="height:28px;width:28px;object-fit:contain;vertical-align:middle;margin-right:8px;opacity:0.7;">
-    © 2026 Priyam Chatterjee · <a href="https://orcid.org/0000-0002-8303-2395">ORCID</a> · <a href="https://www.linkedin.com/in/chatterjipriyam">LinkedIn</a>
-  </p>
+  <p>© 2026 Priyam Chatterjee · Built with precision · <a href="https://orcid.org/0000-0002-8303-2395">ORCID</a> · <a href="https://www.linkedin.com/in/chatterjipriyam">LinkedIn</a></p>
 </footer>
 
 <script>
