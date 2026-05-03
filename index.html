@@ -1876,9 +1876,9 @@
         I'm always open to discussing research collaborations, neurophysiology, para-sport classification, academic opportunities, or just a conversation about science.
       </p>
       <div class="contact-links">
-        <a class="contact-link" href="mailto:contact@priyamchatterjee.com">
+        <a class="contact-link" href="#" id="idx-email-link">
           <div class="link-icon">✉️</div>
-          <span class="link-label">contact@priyamchatterjee.com</span>
+          <span class="link-label" id="idx-email-label">Use the enquiry form in Contact section</span>
           <span class="link-arrow">→</span>
         </a>
         <a class="contact-link" href="https://www.linkedin.com/in/chatterjipriyam" target="_blank">
@@ -1970,13 +1970,7 @@
   <div style="display:flex;flex-direction:column;align-items:center;gap:16px;padding:30px 60px;border-top:1px solid var(--border);">
     <!-- Social icons -->
     <div style="display:flex;gap:12px;">
-      <a href="mailto:contact@priyamchatterjee.com" title="Email"
-         style="width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:border-color 0.2s,transform 0.2s;color:var(--accent);text-decoration:none;"
-         onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'"
-         onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/chatterjipriyam" target="_blank" title="LinkedIn"
+     <a href="https://www.linkedin.com/in/chatterjipriyam" target="_blank" title="LinkedIn"
          style="width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:border-color 0.2s,transform 0.2s;color:#0077b5;text-decoration:none;"
          onmouseover="this.style.borderColor='#0077b5';this.style.transform='translateY(-2px)'"
          onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
@@ -2106,6 +2100,17 @@
     }, { threshold: 0.5 });
     statsObserver.observe(statsEl);
   }
+  // ─── EMAIL OBFUSCATION ───
+  (function(){
+    var u = 'contact';
+    var d = 'priyamchatterjee.com';
+    var el = document.getElementById('idx-email-link');
+    var lb = document.getElementById('idx-email-label');
+    if (el && lb) {
+      el.href = 'mailto:' + u + '@' + d;
+      lb.textContent = u + '@' + d;
+    }
+  })();
 </script>
 </body>
 </html>
