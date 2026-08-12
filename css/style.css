@@ -1,7 +1,7 @@
 /* ============================================================
    PRIYAM CHATTERJEE — PORTFOLIO
    Theme: Dark Elegance with Teal/Electric-Blue Accents
-   Fonts: Syne (headings) + DM Sans (body) + DM Mono (code/labels)
+   Fonts: Fraunces (headings) + Inter (body) + DM Mono (code/labels)
    ============================================================ */
 
 /* ── RESET & BASE ─────────────────────────────────────── */
@@ -29,8 +29,8 @@
   --border:     rgba(255,255,255,0.07);
   --border-2:   rgba(255,255,255,0.13);
 
-  --font-head:  'Syne', sans-serif;
-  --font-body:  'DM Sans', sans-serif;
+  --font-head:  'Fraunces', serif;
+  --font-body:  'Inter', sans-serif;
   --font-mono:  'DM Mono', monospace;
 
   --max-w: 1120px;
@@ -182,8 +182,8 @@ img { max-width: 100%; display: block; }
 .hero-title em {
   font-style: italic;
   color: var(--teal);
-  font-weight: 400;
-  font-family: 'DM Serif Display', serif;
+  font-weight: 500;
+  font-family: 'Fraunces', serif;
 }
 .hero-sub {
   font-family: var(--font-head);
