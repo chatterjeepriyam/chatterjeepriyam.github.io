@@ -5,17 +5,15 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 // ── MOBILE MENU ─────────────────────────────────────────
-const menuBtn = document.getElementById('menuBtn');
+const menuBtn = document.getElementById('navToggle');
 const navLinksEl = document.querySelector('.nav-links');
 if (menuBtn) {
   menuBtn.addEventListener('click', () => {
     navLinksEl.classList.toggle('open');
-    menuBtn.textContent = navLinksEl.classList.contains('open') ? '✕' : '☰';
   });
   navLinksEl.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
       navLinksEl.classList.remove('open');
-      menuBtn.textContent = '☰';
     });
   });
 }
@@ -24,7 +22,7 @@ if (menuBtn) {
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
-      e.target.classList.add('visible');
+      e.target.classList.add('aos-visible');
       e.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
         bar.style.width = bar.dataset.width + '%';
       });
@@ -32,7 +30,7 @@ const revealObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-document.querySelectorAll('.reveal').forEach((el, i) => {
+document.querySelectorAll('[data-aos]').forEach((el, i) => {
   el.style.transitionDelay = (i % 4) * 0.08 + 's';
   revealObserver.observe(el);
 });
